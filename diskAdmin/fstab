@@ -1,0 +1,18 @@
+# /etc/fstab: static file system information.
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+#<file system> 指定磁盘名称或者UUID 也可以是LABLE 也可以是文件
+#<mount point>  指定挂载点   swap分区可以选择none或者swap   此处选择swap
+#<type>  指定文件系统类型   
+#<option> 挂载选项
+#<dump> 转储备份  每次完全备份的时间  0表示不备份  1表示每天进行一次备份
+#<pass> 开机检测的次序  0表示不检查  1表示最先检测 一般只有根为1； 2表示在1后检测  可以有多个2  表示可以同时检测多个2
+
+
+
+UUID=bb9d891b-63ae-4183-9b71-4e2f01770a11 	/               ext4 		errors=remount-ro 					0       1
+UUID=A7BD-0D9D  				/boot/efi       vfat 		umask=0077      					0       1
+UUID=35b12b21-76d2-45dc-8fea-6c296111411d 	swap           	swap 		sw     							0       0
+UUID=E804B11504B0E828				/mnt/filestore	ntfs-3g		defaults,user,rw,iocharset=utf8,umask=000,nls=utf8	0	0
+UUID=486C91B16C9199F0     	                /mnt/download	ntfs-3g	        defaults,user,rw,iocharset=utf8,umask=000,nls=utf8	0	0
+
+
