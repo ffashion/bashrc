@@ -1,1 +1,43 @@
-set nu
+function s:setVariable()
+    set number
+	set relativenumber
+	set showmode
+	set encoding=utf-8
+	set t_Co=256
+	set autoindent  "按下回车键 自动和上一行对齐
+	set tabstop=4   "tab键的大小
+	set laststatus=2
+	set statusline=
+	set hlsearch
+	filetype on "开启文件类型检测
+	filetype plugin on  "加载某种类型文件的插件
+	filetype indent on  "设置某种类型语言的tab键大小
+    syntax on
+	""let &runtimepath = "/data/data/com.termux/home/.vim/plugind"
+    call plug#begin("~/.vim/plugind")
+		Plug 'itchyny/lightline.vim'
+		Plug 'preservim/nerdtree'
+		Plug 'dense-analysis/ale'
+	call plug#end()
+endfunction
+
+
+function s:map()
+
+endfunction
+
+function s:test()
+		command Del echo "hello"
+endfunction
+
+
+
+function s:main()
+	call s:setVariable()
+	call s:test()
+endfunction
+
+
+call s:main()
+
+
