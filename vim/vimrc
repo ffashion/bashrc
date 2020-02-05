@@ -13,11 +13,18 @@ function s:setVariable()
 	filetype plugin on  "加载某种类型文件的插件
 	filetype indent on  "设置某种类型语言的tab键大小
     syntax on
+	terminal bash
+	execute "normal \<C-w>r"
+	resize -15
 	""let &runtimepath = "/data/data/com.termux/home/.vim/plugind"
     call plug#begin("~/.vim/plugind")
 		Plug 'itchyny/lightline.vim'
 		Plug 'preservim/nerdtree'
 		Plug 'dense-analysis/ale'
+		Plug 'tpope/vim-commentary'
+		Plug 'iamcco/markdown-preview.vim'
+		Plug 'atom-community/markdown-preview-plus'
+		Plug 'othree/html5.vim'
 	call plug#end()
 endfunction
 
