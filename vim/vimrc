@@ -15,7 +15,7 @@ function s:setVariable()
     syntax on
 	terminal bash
 	execute "normal \<C-w>r"
-	resize -15
+	resize -10
 	""let &runtimepath = "/data/data/com.termux/home/.vim/plugind"
     call plug#begin("~/.vim/plugind")
 		Plug 'itchyny/lightline.vim'
@@ -30,7 +30,10 @@ endfunction
 
 
 function s:map()
-
+		map  <Space>h <C-w>h
+		map  <Space>j <C-w>j
+		map  <Space>k <C-w>k
+		map  <Space>l <C-w>l
 endfunction
 
 function s:test()
@@ -42,6 +45,8 @@ endfunction
 function s:main()
 	call s:setVariable()
 	call s:test()
+	call s:map()
+
 endfunction
 
 
