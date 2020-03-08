@@ -9,6 +9,7 @@ function s:setVariable()
 	set laststatus=2
 	set statusline=
 	set hlsearch
+	set mouse=a
 	filetype on "开启文件类型检测
 	filetype plugin on  "加载某种类型文件的插件
 	filetype indent on  "设置某种类型语言的tab键大小
