@@ -4,11 +4,11 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ disco main restricted unive
 
 
 #ubuntu 18.04源
-deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main multiverse restricted universe
-deb  http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main multiverse restricted universe
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main multiverse restricted universe
+deb  http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main multiverse restricted universe
 
 
 
 #ubuntu 16.04源
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
-deb https://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse 
+deb https://mirrors.aliyun.com/ubuntu/ xenial  main restricted universe multiverse 
