@@ -1,0 +1,13 @@
+[client]
+#
+host=47.97.124.150
+user=root
+password
+port=3306
+
+database=account
+
+prompt=\u@\d>
+
+compress
+
