@@ -1,1 +1,1 @@
-# bashrc
+ffashion's personal conf
