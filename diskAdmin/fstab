@@ -9,10 +9,10 @@
 
 
 
-UUID=bb9d891b-63ae-4183-9b71-4e2f01770a11 	/               ext4 		errors=remount-ro 					0       1
-UUID=A7BD-0D9D  				/boot/efi       vfat 		umask=0077      					0       1
-UUID=35b12b21-76d2-45dc-8fea-6c296111411d 	swap           	swap 		sw     							0       0
-UUID=E804B11504B0E828				/mnt/filestore	ntfs-3g		defaults,user,rw,iocharset=utf8,umask=000,nls=utf8	0	0
-UUID=486C91B16C9199F0     	                /mnt/download	ntfs-3g	        defaults,user,rw,iocharset=utf8,umask=000,nls=utf8	0	0
+UUID=bb9d891b-63ae-4183-9b71-4e2f01770a11 	/               ext4 		errors=remount-ro 									0       1
+UUID=A7BD-0D9D  							/boot/efi       vfat 		umask=0077      									0       1
+UUID=35b12b21-76d2-45dc-8fea-6c296111411d 	swap           	swap 		sw     												0       0
+UUID=E804B11504B0E828						/mnt/filestore	ntfs-3g		defaults,user,rw,iocharset=utf8,umask=000,nls=utf8	0		0
+UUID=486C91B16C9199F0     	                /mnt/download	ntfs-3g	    defaults,user,rw,iocharset=utf8,umask=000,nls=utf8	0		0
 
 
