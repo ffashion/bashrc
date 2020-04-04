@@ -33,15 +33,28 @@ function s:map()
 		"nmap 在normal模式中生效
 		"imap 在insert模式中生效
 		"vmap 在visual模式中生效
-		nmap <Space>h <C-w>h
-		map  <Space>j <C-w>j
-		map  <Space>k <C-w>k
-		map  <Space>l <C-w>l
-		map  tt		  :NERDTree<CR>
-		map  tc 	  :NERDTreeClose<CR>
-		map  ss		  :terminal bash<CR><C-w>r<C-w>k:resize +10<CR>
-		map  sc       :bwipe! !bash<CR>
-		map  <C-s>    :w<CR>
+		nnoremap  <Space>h <C-w>h
+		nnoremap  <Space>j <C-w>j
+		nnoremap  <Space>k <C-w>k
+		nnoremap  <Space>l <C-w>l
+		nnoremap  tt		  :NERDTree<CR>
+		nnoremap  tc 	  	  :NERDTreeClose<CR>
+		nnoremap  ss		  :terminal bash<CR><C-w>r<C-w>k:resize +10<CR>
+		nnoremap  sc       	  :bwipe! !bash<CR>
+		nnoremap  <C-s>       :w<CR>
+		nnoremap  <left>	  <nop>
+		nnoremap  <right>	  <nop>
+		nnoremap  <up>	      <nop>
+		nnoremap  <down>	  <nop>
+
+		
+		
+		inoremap  ,,		  <ESC>
+		inoremap  <ESC>		  <nop>
+		inoremap  <up>	      <nop>
+		inoremap  <down>	  <nop>
+		inoremap  <left>	  <nop>
+		inoremap  <right>	  <nop>
 endfunction
 
 function s:test()
