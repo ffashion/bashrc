@@ -8,9 +8,16 @@ setVar(){
 setCommandAlias(){
 		alias ls='ls --color'
 }
+setKeyMap(){
+		#syntax 	bind 'parameter'
+		bind '",,":"\e"'
+		bind '"\C-a": beginning-of-line'
+		bind '"\C-l": clear-screen'
+}
 main(){
 		setVar
 		setEnvVar
 		setCommandAlias
+		setKeyMap
 }
 main
