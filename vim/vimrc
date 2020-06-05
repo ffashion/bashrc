@@ -1,3 +1,9 @@
+function s:setPlugVar()
+		" for SirVer/ultisnips
+		let g:UltiSnipsExpandTrigger="<tab>"
+		let g:UltiSnipsJumpForwardTrigger="<c-b>"
+		let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+endfunction
 function s:setVariable()
     set number
 	set relativenumber
@@ -23,8 +29,10 @@ function s:setVariable()
     call plug#begin("~/.vim/plugind")
 		Plug 'itchyny/lightline.vim'
 		Plug 'preservim/nerdtree'
+		Plug 'SirVer/ultisnips'
+		Plug 'honza/vim-snippets'
 	call plug#end()
-
+	call s:setPlugVar()
 endfunction
 
 
