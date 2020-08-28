@@ -10,6 +10,7 @@ function s:setVariable()
 	set statusline=
 	set hlsearch
 	set mouse=a
+	set showtabline=2 "总是显示标签栏
 	colorscheme desert
 
 	filetype on "开启文件类型检测
