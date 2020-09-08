@@ -122,7 +122,13 @@ syncfile(){
 
 
 }
-syncfile
+nohup syncfile 2>&1 1>/dev/null &
+getfile(){
+	#rsync -azzv root@fashion:/var/www  /mnt/d/'OneDrive - kolo'/桌面/File
+	rsync -azzv root@fashion:/var/www/同步笔记  /mnt/d/'OneDrive - kolo'/桌面/File
+	rsync -azzv root@fashion:/var/www/pdf教程  /mnt/d/'OneDrive - kolo'/桌面/File
+
+}
 PS1='\u@\h\$'
 
 setAlias(){
