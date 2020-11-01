@@ -2,13 +2,10 @@ setEnvVar(){
 		PATH=~/bin:$PATH
     	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 }
-setVar(){
+setTerminalParametere(){
 		set -o vi
 }
-setCommandAlias(){
-		alias ls='ls --color'
-		alias grep='grep --color'
-}
+
 setKeyMap(){
 		#syntax 	bind 'parameter'
 		bind '",,":"\e"'
@@ -30,15 +27,16 @@ getfile(){
 }
 
 setAlias(){
+	alias ls='ls --color'
+	alias grep='grep --color'
 	alias 'rmc'='rm *.class'
 	alias 'e'='ls -l'
 	alias sip="grep -E '\<\<(([0-9]|[1-9][0-9]|1[0-9][0-9]|2([0-4][0-9]|5[0-4]))\>\.){3}(\<[0-9]|[1-9][0-9]|1[0-9][0-9]|2([0-4][0-9]|5[0-4])\>)\>'"
 }
 
 main(){
-		setVar
+		setTerminalParametere
 		setEnvVar
-		setCommandAlias
 		setKeyMap
 		setAlias
 		syncfile
