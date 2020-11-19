@@ -42,12 +42,15 @@ function s:map()
 		nnoremap  tc 	  	  :NERDTreeClose<CR>
 		nnoremap  ss		  :terminal bash<CR><C-w>r<C-w>k:resize +10<CR>
 		nnoremap  sc       	  :bwipe! !bash<CR>
+		nnoremap  <F9> 	  	  :tabnew<CR>
+		nnoremap   <S-h>       :tabp<CR>
+		nnoremap   <S-l>       :tabn<CR>
+
 		nnoremap  <C-s>       :w<CR>
 		nnoremap  <left>	  <nop>
 		nnoremap  <right>	  <nop>
 		nnoremap  <up>	      <nop>
 		nnoremap  <down>	  <nop>
-
 		
 		
 		inoremap  ,,		  <ESC>
@@ -56,6 +59,10 @@ function s:map()
 		inoremap  <down>	  <nop>
 		inoremap  <left>	  <nop>
 		inoremap  <right>	  <nop>
+		"inoremap  <Tab><Tab>      <C-n>
+		inoremap  <S-n>      <C-n>
+		inoremap  <S-p> 	 <C-n>
+		
 endfunction
 
 function s:test()
@@ -72,5 +79,3 @@ endfunction
 
 
 call s:main()
-
-
