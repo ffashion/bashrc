@@ -43,8 +43,8 @@ function s:map()
 		nnoremap  ss		  :terminal bash<CR><C-w>r<C-w>k:resize +10<CR>
 		nnoremap  sc       	  :bwipe! !bash<CR>
 		nnoremap  <F9> 	  	  :tabnew<CR>
-		nnoremap   <S-h>       :tabp<CR>
-		nnoremap   <S-l>       :tabn<CR>
+		nnoremap  <C-h>       :tabp<CR>
+		nnoremap  <C-l>       :tabn<CR>
 
 		nnoremap  <C-s>       :w<CR>
 		nnoremap  <left>	  <nop>
@@ -60,8 +60,8 @@ function s:map()
 		inoremap  <left>	  <nop>
 		inoremap  <right>	  <nop>
 		"inoremap  <Tab><Tab>      <C-n>
-		inoremap  <S-n>      <C-n>
-		inoremap  <S-p> 	 <C-n>
+		"inoremap  <S-n>      <C-n>
+		"inoremap  <S-p> 	 <C-p>
 		
 endfunction
 
