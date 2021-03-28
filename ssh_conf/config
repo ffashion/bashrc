@@ -1,0 +1,8 @@
+Host gitee.com 
+Hostname gitee.com 
+PreferredAuthentications  publickey 
+Identityfile ~/.ssh/id_rsa
+#web server 
+Host kuandai.ruanhaiqing.com 
+
+Identityfile ~/.ssh/nas:main_id_rsa
