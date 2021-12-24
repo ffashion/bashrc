@@ -1,3 +1,3 @@
 cp -- vimrc ~/.vimrc 
-mkdir -p -- ~/.vim
+mkdir -p -- ~/.vim/plugin
 cp -r -- autoload ~/.vim/autoload 
