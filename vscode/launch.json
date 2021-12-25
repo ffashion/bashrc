@@ -1,0 +1,58 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "lldb-signal-attach",
+            "type": "lldb",
+            "request": "attach",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}"
+        },
+        {   
+            "name": "lldb singal Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${fileDirname}"
+        },
+        {
+            "name": "g++ singal lanuch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build_singal_file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "g++ singal attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build_singal_file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "a pre build task"
+        }
+    ],
+    "version": "2.0.0"
+}
