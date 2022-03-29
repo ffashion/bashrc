@@ -1,0 +1,3 @@
+all: main.c
+	gcc  -static -g -o main.elf main.c
+
