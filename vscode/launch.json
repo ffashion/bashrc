@@ -102,6 +102,23 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "debug linux",
+            "type": "cppdbg",
+            "request": "launch",
+            "MIMode": "gdb",
+            "miDebuggerServerAddress": "localhost:1234",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "",
+            "program": "${workspaceFolder}/vmlinux",
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "args": [],
+            "logging": {
+                "engineLogging": false
+            }
         }
     ]
 }
