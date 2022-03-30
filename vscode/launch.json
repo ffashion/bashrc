@@ -89,6 +89,26 @@
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
+            "name": "g++ singal root lanuch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/rootgdb"
+        },
+        {
             "name": "g++ singal attach",
             "type": "cppdbg",
             "request": "attach",
